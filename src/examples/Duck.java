@@ -10,13 +10,35 @@ public class Duck {
 
 	private String favoriteFood;
 	private int lifeExpectancy;
+	private String color;
+	private static int numberOfCreations = 0;
+	public boolean isPoison;
+	
+	{
+		numberOfCreations++;
+	}
 	
 
 	public Duck(String favoriteFood, int lifeExpectancy) {
 		this.favoriteFood = favoriteFood;
 		this.lifeExpectancy = lifeExpectancy;
 	}
-
+	
+	public Duck() {
+		if (numberOfCreations % 2 == 1) {
+			this.color = "black";	
+		}
+		else {
+			this.color = "white";
+		}
+	}
+	
+	public String getColor(){
+		return this.color;
+	}
+	
+	
+	
 	public void waddle() {
 		lifeExpectancy++;
 		System.out.println("waddle waddle");
@@ -38,5 +60,13 @@ public class Duck {
 			ex.printStackTrace();
 		}
 	}
+	
+	public static int getNumberOfCreations(){
+		return Duck.numberOfCreations;
+	}
+	
+	
+	
+	
 
 }
