@@ -35,9 +35,23 @@ public class Cat {
 
 		// 1. Make the Cat meow
 		
+		Cat c1 = new Cat("Cana");
+		c1.meow();
+		
 		// 2. Get the Cat to print it's name
-
+		c1.printName();
+		
 		// 3. Kill the Cat!
+		c1.kill();
+		c1.kill();
+		c1.kill();
+		c1.kill();
+		c1.kill();
+		c1.kill();
+		c1.kill();
+		c1.kill();
+		c1.kill();
+		
 
 	}
 }
