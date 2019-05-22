@@ -6,7 +6,7 @@ public class DuckBreeder {
 		
 //		Duck morrisey = new Duck("celery", 90/3);
 //		
-//		Duck carniverousCarla = new Duck("frogs", 60/3);
+//	    Duck carniverousCarla = new Duck("frogs", 60/3);
 //		
 //		carniverousCarla.waddle();
 //		carniverousCarla.waddle();
